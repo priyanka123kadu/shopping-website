@@ -1,0 +1,394 @@
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous" referrerpolicy="no-referrer" />
+   <style>
+      * {
+         box-sizing: border-box;
+         font-family: Arial, Helvetica, sans-serif;
+      }
+
+      body {
+         margin: 0;
+         padding: 0;
+      }
+
+      .header {
+         /* text-align: start;
+            background-color: rgb(238, 243, 243);
+            padding: 0px;
+            width: 100%;
+            overflow: hidden;
+            position:sticky;
+            top: 0;
+            z-index: 1; */
+
+
+
+
+
+         text-align: start;
+         background-color: rgb(238, 243, 243);
+         padding: 0px;
+         width: 100%;
+         overflow: hidden;
+         position: fixed;
+         top: 0px;
+         z-index: 1;
+      }
+
+      .header h2 {
+         margin-left: 8px;
+         margin-top: 4px;
+         font-size: 32px;
+         /* position: ; */
+
+      }
+
+      .header h2 sub {
+         font-size: 15px;
+         color: brown;
+         font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+      }
+
+      .header input {
+         float: right;
+         margin-top: -50px;
+         height: 40px;
+         width: 45%;
+         margin-right: 20px;
+         border-radius: 5px;
+         text-align: start;
+         /* border-color: white; */
+         font-size: 16px;
+      }
+
+      .header i {
+         float: right;
+         margin-top: -35px;
+         font-size: 20px;
+         padding-right: 35px;
+      }
+
+      .navbar {
+         width: 100%;
+         height: 70px;
+         position: fixed;
+         top: 65px;
+         z-index: 4;
+
+
+/* 
+         width: 100%;
+         height: 63px;
+         position: fixed;
+         top: 70px;
+         z-index: 4; */
+      }
+
+      .navbar i {
+         /* float: left; */
+      }
+
+      .navbar a {
+         float: left;
+         width: 20%;
+         height: 70px;
+         color: white;
+         text-align: center;
+         /* padding: 4px 6px; */
+         /* padding: 4px; */
+         background-color: rgb(53, 51, 51);
+         text-decoration: none;
+         font-family: sans-serif;
+         line-height: 2.9;
+         font-size: 20px;
+
+
+
+      }
+
+      .navbar a i {
+         padding-right: 8px;
+      }
+
+      .section .banner .smllpic {
+         height: 150px;
+         width: 150px;
+         position: relative;
+         left: 50px;
+         top: -250px;
+         display: inline-block;
+         margin-right: 30px;
+      }
+
+      .section .banner .one {
+         background-image: url("./5.jpg");
+         background-size: cover;
+      }
+
+      .section .banner .two {
+         background-image: url("./6.jpg");
+         background-size: cover;
+      }
+
+      .section .banner .three {
+         background-image: url("./7.jpg");
+         background-size: cover;
+      }
+
+      .section .banner .smllpic p {
+         position: relative;
+         top: 140px;
+         text-align: center;
+         text-transform: uppercase;
+         font-family: Arial, Helvetica, sans-serif;
+         font-style: bold;
+      }
+
+      .navbar a:hover {
+         /* background-color: rgb(151, 144, 144); */
+         color: rgb(206, 30, 30);
+      }
+
+      .section {
+         height: 500px;
+      }
+
+      .section .banner .right {
+         float: right;
+      }
+
+      .main_section {
+         height: 400px;
+         width: 100%;
+         background-color: aliceblue;
+         display: flexbox;
+         justify-content: space-between;
+         /* align-content: center; */
+         margin: 0;
+      }
+
+      .main_section h2 {
+         margin-left: 50px;
+      }
+
+      .main_section ul {
+         display: flex;
+         justify-content: space-between;
+         align-items: center;
+         margin: 10px;
+         z-index: 0;
+
+
+      }
+
+      .main_section ul li {
+         height: 70px;
+         width: 150px;
+         border: 3px solid rgb(36, 182, 23);
+         list-style: none;
+         text-align: center;
+         font-size: 20px;
+         font-family: Arial, Helvetica, sans-serif;
+         padding: 10px;
+         border-radius: 8px;
+         margin: 20px;
+      }
+
+      .footer {
+         height: 200px;
+         width: 100%;
+         background-color: rgb(29, 27, 27);
+         margin-top: 20px;
+      }
+
+      .footer .footer_content {
+         /* float: right; */
+
+         padding-top: 40px;
+
+      }
+
+      .footer .footer_content h3 {
+         float: left;
+         color: white;
+         position: relative;
+         left: 110px;
+         top: -10px;
+         font-size: 28px;
+         margin-top: 10px;
+
+      }
+
+      .footer .footer_content a {
+         margin-left: 30px;
+         /* border: 1px solid rgb(26, 23, 23); */
+         text-decoration: none;
+         /* padding: 10px; */
+         color: white;
+         /* display: inline-block; */
+         float: right;
+         font-size: 20px;
+         padding-right: 40px;
+         padding-left: 10px;
+         padding-top: 0px;
+         padding-bottom: 2px;
+
+
+
+      }
+
+      .footer .footer_content a i {
+         padding-right: 10px;
+         font-size: 30px;
+         border: 1px;
+         border-radius: 5px;
+
+      }
+
+      .footer .footer_content a:hover {
+         background-color: rgb(70, 66, 66);
+         /* padding: 0px; */
+      }
+
+      .footer .num {
+         float: left;
+         color: rgb(128, 119, 119);
+         margin-top: 50px;
+         margin-left: 300px;
+         font-size: 20px;
+         padding-right: 10px;
+      }
+
+      .footer .num i {
+         position: relative;
+         left: 15px;
+         font-size: 25px;
+         transition: width 2s, height 2s, transform 2s;
+
+      }
+
+      .footer .num i:hover {
+         color: greenyellow;
+         /* background-color: brown; */
+         transform: rotate(90deg);
+         transition-delay: 0s;
+         font-size: 26px;
+
+      }
+
+      .footer .num p {
+         position: relative;
+         top: -38px;
+         left: 120px;
+         font-size: 17px;
+         transition: 3s;
+
+         color: white;
+      }
+   </style>
+</head>
+
+<body>
+   <div class="header">
+      <h2>Priyanka<sub>my dummy clone</sub>
+
+      </h2>
+
+      <input type="search" placeholder=" Search here...">
+      <i class="fa-solid fa-magnifying-glass"></i>
+
+   </div>
+   <div class="navbar">
+
+
+      <a href="#"> <i class="fa-solid fa-house"></i> Home</a></i>
+      <a href="#"> <i class="fa-solid fa-phone"></i> Contact</a>
+      <a href="./login.html" target="_parent"> <i class="fa-solid fa-right-to-bracket"></i> Login</a>
+      <a href="#"> <i class="fa-solid fa-address-book"></i> About Us</a>
+      <a href="#"> <i class="fa-solid fa-magnifying-glass"></i> Search</a>
+      <!-- <a href="#">Services</a> -->
+
+   </div>
+   <div class="section">
+      <div class="banner">
+         <img src="pic.avif" width="350" height="500">
+         <div class="right">
+            <img src="pic.avif" width="350" height="500">
+         </div>
+         <div class="smllpic  one">
+            <p>Lorem, ipsum dolor.</p>
+         </div>
+         <div class="smllpic two">
+            <p>Lorem, ipsum dolor.</p>
+         </div>
+         <div class="smllpic three">
+            <p>Lorem, ipsum dolor.</p>
+         </div>
+
+
+      </div>
+   </div>
+   <div class="main_section">
+      <h2>Trending Company</h2>
+      <div class="list">
+         <ul>
+            <li>One</li>
+            <li>Two</li>
+            <li>Three</li>
+            <li>Four</li>
+            <li>Five</li>
+            <li>Six</li>
+
+         </ul>
+         <ul>
+            <li>One</li>
+            <li>Two</li>
+            <li>Three</li>
+            <li>Four</li>
+            <li>Five</li>
+            <li>Six</li>
+
+         </ul>
+         <ul>
+            <li>One</li>
+            <li>Two</li>
+            <li>Three</li>
+            <li>Four</li>
+            <li>Five</li>
+            <li>Six</li>
+
+         </ul>
+      </div>
+   </div>
+
+   <div class="footer">
+
+      <!-- <hr> -->
+      <div class="footer_content">
+         <h3> Follow Us on <i class="fa-solid fa-arrow-right"></i></h3>
+
+         <a href="#" style="color: green;"> <i class="fa-brands fa-whatsapp"></i>WhatsApp</a>
+         <a href="#" style="color: rgb(201, 29, 72);"> <i class="fa-brands fa-instagram"></i></i>Instagram</a>
+         <a href="#" style="color: rgb(65, 65, 189);"> <i class="fa-brands fa-facebook"></i>Facebook</a>
+         <a href="#" style="color: rgb(31, 31, 131);"> <i class="fa-brands fa-twitter"></i>Twitter</a>
+         <a href="#" style="color: rgb(97, 97, 230);"> <i class="fa-brands fa-linkedin"></i>Linkden</a>
+      </div>
+
+
+      <div class="num">
+         Call on<i class="fa-solid fa-phone" style="color: green;"></i>
+         <p>8379084321</p>
+
+      </div>
+   </div>
+
+</body>
+
+</html>
